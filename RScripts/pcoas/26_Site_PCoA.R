@@ -1,7 +1,7 @@
 #Author: Alicia Sorgen
 #BioLockJ configuration: Alicia Sorgen
 #Date: 01-08-21
-#Description: 
+#Description: Generate PCoAs based on Bray-Curtis distances for OTUs classfied from the genus to phylum levels clustered by site.
 
 rm(list=ls())
 
