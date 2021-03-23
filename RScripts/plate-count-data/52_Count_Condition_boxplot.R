@@ -1,7 +1,7 @@
 #Author: Alicia Sorgen
 #BioLockJ configuration: Alicia Sorgen
 #Date: 01-18-21
-#Description: 
+#Description: Generate colony count boxplot based on incubation conditions.
 
 ## Libraries
 library(ggplot2)
