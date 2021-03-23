@@ -1,7 +1,7 @@
 #Author: Alicia Sorgen
 #BioLockJ configuration: Alicia Sorgen
 #Date: 01-18-21
-#Description: 
+#Description: Generate colony count boxplots based on upstream v. downstream locations and residential v. hospital locations.
 
 ## Libraries
 library(ggplot2)
