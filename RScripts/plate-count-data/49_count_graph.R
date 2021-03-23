@@ -1,7 +1,7 @@
 #Author: Alicia Sorgen
 #BioLockJ configuration: Alicia Sorgen
 #Date: 01-18-21
-#Description:
+#Description: Generate count line graph (Figure 2)
 
 setwd('~/BioLockJ_pipelines/otu-analysis_2021Feb22/64_CountGraph/script/')
 ## Libraries
