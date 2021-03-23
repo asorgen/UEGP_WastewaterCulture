@@ -1,7 +1,7 @@
 #Author: Alicia Sorgen
 #BioLockJ configuration: Alicia Sorgen
 #Date: 01-18-21
-#Description: 
+#Description: Provide a summary table for sequence data including sample size, diversity statistics, etc.
 
 ## Libraries
 library(tidyr)
