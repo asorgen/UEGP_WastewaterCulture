@@ -8,11 +8,13 @@ Sequences were processed using QIIME2 version: 2019.1.0 on a general use Slurm p
 ## Steps for sequence processing
 
 **1.) Generate fastq manifest file and secure copy to research cluster**                
+
 See manifest file `fastq_manifest.csv`
 
 
 
 **2.) Import manifest into QIIME2**               
+
 _Run time ~21 min using 16 cores from 1 node and 125gb memory_
 
 `qiime tools import --type 'SampleData[PairedEndSequencesWithQuality]' --input-path fastq_manifest.csv --input-format PairedEndFastqManifestPhred33 --output-path raw-seqs.qza`
@@ -20,6 +22,7 @@ _Run time ~21 min using 16 cores from 1 node and 125gb memory_
 
 
 **3.) Summarize and view .qza file**               
+
 _Run time ~59 min using 16 cores from 1 node and 125gb memory_
 
 `qiime demux summarize --i-data raw-seqs.qza --o-visualization raw-seqs.qzv`
@@ -28,6 +31,7 @@ Inspect raw-seqs.qzv using https://view.qiime2.org/ to determine subsequent qual
 
 
 **4.) Denoise and filter sequences using DADA2**               
+
 _Run time ~186 hrs using 16 cores from 1 node and 125gb memory_
 
 `qiime dada2 denoise-paired --i-demultiplexed-seqs raw-seqs.qza --p-trim-left-f 0 --p-trim-left-r 0 --p-trunc-len-f 115 --p-trunc-len-r 115 --o-table ASVtable.qza --o-representative-sequences ASVseqs.qza --o-denoising-stats denoising-stats.qza --verbose --p-n-threads 16`
