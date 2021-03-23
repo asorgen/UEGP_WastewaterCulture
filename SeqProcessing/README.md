@@ -103,8 +103,11 @@ Filter low frequency ASVs from sequences
 Inspect OR-OTUtable-nochim-nosingle.qzv using https://view.qiime2.org/ to determine total sequence frequency.
 
 *Table summary*
+
 Number of samples: 309
+
 Number of features: 136,765
+
 Total frequency: 241,320,131
 
 
@@ -115,6 +118,7 @@ Total frequency: 241,320,131
 
 
 **13.) Remove OTUs <0.01% across all samples**
+
 0.01% of Total frequency = 24,132
 
 `qiime feature-table filter-features --i-table OR-OTUtable-nochim-nosingle.qza --p-min-frequency 24132 --o-filtered-table OR-OTUtable-nochim-nosingle-abun.qza`
@@ -124,8 +128,11 @@ Total frequency: 241,320,131
 Inspect OR-OTUtable-nochim-nosingle-abun.qzv using https://view.qiime2.org/
 
 *Table summary*
+
 Number of samples: 309
+
 Total OTUs: 1,156
+
 Total OTU counts: 204,547,544
 
 Further inspect OR-OTUtable-nochim-nosingle-abun.qzv using https://view.qiime2.org/ using 'Interactive Sample Detail' tab to determine minimum sample sequence count.
@@ -141,8 +148,11 @@ Further inspect OR-OTUtable-nochim-nosingle-abun.qzv using https://view.qiime2.o
 Inspect final-filtered-OR-OTUtable.qzv using https://view.qiime2.org/
 
 *Table summary*
+
 Number of samples: 303
+
 Total OTUs: 1,156
+
 Total OTU counts: 204,546,845
 
 
@@ -210,7 +220,9 @@ Total OTU counts: 204,546,845
 
 
 **23.) Get OTU taxonomy**
+
 Open up OR-taxonomy.qzv in QIIME2 View
+
 Download the metadata.tsv file
 
 `mv ~/Downloads/metadata.tsv UEGP_WastewaterCulture/data/OTU-taxonomy.tsv`
@@ -228,6 +240,7 @@ Open up observed_otus_vector.qzv in QIIME2 View
 `mv ~/Downloads/metadata.tsv UEGP_WastewaterCulture/data/observed_otus.tsv`
 
 Open up final-filtered-OR-OTUtable.qzv in QIIME2 View
+
 Download Frequency per sample csv 
 
 `mv ~/Downloads/sample-frequency-detail.csv UEGP_WastewaterCulture/data/SEQfreqperSample.csv`
@@ -235,13 +248,20 @@ Download Frequency per sample csv
 
 
 **25.) Download taxonomy tables**
+
 Open up taxonomy-barplot.qzv in QIIME2 View
+
 Download the csv files
 
 `mv ~/Downloads/level-2.csv UEGP_WastewaterCulture/data/taxonomy-barplot`
+
 `mv ~/Downloads/level-3.csv UEGP_WastewaterCulture/data/taxonomy-barplot`
+
 `mv ~/Downloads/level-4.csv UEGP_WastewaterCulture/data/taxonomy-barplot`
+
 `mv ~/Downloads/level-5.csv UEGP_WastewaterCulture/data/taxonomy-barplot`
+
 `mv ~/Downloads/level-6.csv UEGP_WastewaterCulture/data/taxonomy-barplot`
+
 `mv ~/Downloads/level-7.csv UEGP_WastewaterCulture/data/taxonomy-barplot`
 
