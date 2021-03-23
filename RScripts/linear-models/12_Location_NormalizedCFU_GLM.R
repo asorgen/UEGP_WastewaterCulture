@@ -14,7 +14,7 @@ inputModule = dir(pipeRoot, pattern="Normalize", full.names=TRUE)
 inputPath = file.path(inputModule,"output/")
 output = file.path(moduleDir,"output/")
 args <- commandArgs(trailingOnly = TRUE)
-# args <- c("UV", "DSA")
+
 loc1 <- args[1]
 loc2 <- args[2]
 
