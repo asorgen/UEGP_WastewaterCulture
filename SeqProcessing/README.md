@@ -33,6 +33,7 @@ _Run time ~186 hrs using 16 cores from 1 node and 125gb memory_
 `qiime dada2 denoise-paired --i-demultiplexed-seqs raw-seqs.qza --p-trim-left-f 0 --p-trim-left-r 0 --p-trunc-len-f 115 --p-trunc-len-r 115 --o-table ASVtable.qza --o-representative-sequences ASVseqs.qza --o-denoising-stats denoising-stats.qza --verbose --p-n-threads 16`
 
 Visualize sequences and tables
+
 `qiime feature-table summarize --i-table ASVtable.qza --o-visualization ASVtable.qzv`
 
 `qiime feature-table tabulate-seqs --i-data ASVseqs.qza --o-visualization ASVseqs.qzv`
@@ -44,9 +45,11 @@ Visualize sequences and tables
 `qiime feature-table filter-features --i-table ASVtable.qza --p-min-frequency 10 --o-filtered-table filtered-ASVtable.qza`
 
 Visualize table
+
 `qiime feature-table summarize --i-table filtered-ASVtable.qza --o-visualization filtered-ASVtable.qzv`
 
 Filter low frequency ASVs from sequences
+
 `qiime feature-table filter-seqs --i-data ASVseqs.qza --i-table filtered-ASVtable.qza --o-filtered-data filtered-ASVseqs.qza`
 
 
@@ -205,6 +208,7 @@ Total OTU counts: 204,546,845
 **23.) Get OTU taxonomy**
 Open up OR-taxonomy.qzv in QIIME2 View
 Download the metadata.tsv file
+
 `mv ~/Downloads/metadata.tsv UEGP_WastewaterCulture/data/OTU-taxonomy.tsv`
 
 
@@ -212,13 +216,16 @@ Download the metadata.tsv file
 **24.) Download metadata tables**
 
 Open up shannon_vector.qzv in QIIME2 View
+
 `mv ~/Downloads/metadata.tsv UEGP_WastewaterCulture/data/shannon.tsv`
 
 Open up observed_otus_vector.qzv in QIIME2 View
+
 `mv ~/Downloads/metadata.tsv UEGP_WastewaterCulture/data/observed_otus.tsv`
 
 Open up final-filtered-OR-OTUtable.qzv in QIIME2 View
 Download Frequency per sample csv 
+
 `mv ~/Downloads/sample-frequency-detail.csv UEGP_WastewaterCulture/data/SEQfreqperSample.csv`
 
 
@@ -226,6 +233,7 @@ Download Frequency per sample csv
 **25.) Download taxonomy tables**
 Open up taxonomy-barplot.qzv in QIIME2 View
 Download the csv files
+
 `mv ~/Downloads/level-2.csv UEGP_WastewaterCulture/data/taxonomy-barplot`
 `mv ~/Downloads/level-3.csv UEGP_WastewaterCulture/data/taxonomy-barplot`
 `mv ~/Downloads/level-4.csv UEGP_WastewaterCulture/data/taxonomy-barplot`
