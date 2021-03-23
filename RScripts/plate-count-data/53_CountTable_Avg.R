@@ -1,7 +1,7 @@
 #Author: Alicia Sorgen
 #BioLockJ configuration: Alicia Sorgen
 #Date: 01-18-21
-#Description: 
+#Description: Generate table containing average colony counts based on variables.
 
 ## Libraries
 library(tidyr)
