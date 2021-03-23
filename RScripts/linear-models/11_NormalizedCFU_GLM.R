@@ -1,7 +1,7 @@
 #Author: Alicia Sorgen
 #BioLockJ configuration: Alicia Sorgen
 #Date: 01-06-21
-#Description: 
+#Description: Linear models on normalized colony counts for site, location, media, antibiotic.
 
 library(vegan)
 
