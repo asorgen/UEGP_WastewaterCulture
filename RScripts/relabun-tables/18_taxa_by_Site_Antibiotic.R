@@ -1,7 +1,7 @@
 #Author: Alicia Sorgen
 #BioLockJ configuration: Alicia Sorgen
 #Date: 01-07-21
-#Description: 
+#Description: Generate relative abundance tables at each taxonomic level based on site and antibiotic.
 
 rm(list=ls())
 taxa=c("Phylum","Class","Order","Filtered_Family","Genus")
