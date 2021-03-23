@@ -16,9 +16,13 @@ See manifest file `fastq_manifest.csv`
 _Run time ~21 min using 16 cores from 1 node and 125gb memory_
 
 `qiime tools import \
+
 --type 'SampleData[PairedEndSequencesWithQuality]' \
+
 --input-path fastq_manifest.csv \
+
 --input-format PairedEndFastqManifestPhred33 \
+
 --output-path raw-seqs.qza`
 
 
