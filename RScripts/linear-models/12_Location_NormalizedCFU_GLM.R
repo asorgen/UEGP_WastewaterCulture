@@ -1,7 +1,7 @@
 #Author: Alicia Sorgen
 #BioLockJ configuration: Alicia Sorgen
 #Date: 01-25-21
-#Description: 
+#Description: Linear model comparisions between individual locations.
 
 library(vegan)
 
